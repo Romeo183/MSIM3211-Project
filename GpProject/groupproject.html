@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Group Project</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/groupproject.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Header Row-->
+        <div class="row d-flex flex-row-reverse topHeaderRow fixed-top bg-dpblue">
+            <a class="p-2" type="button" style="margin-right: 20px;"><i class="fas fa-star"></i>Favorites</a>
+            <a class="p-2" type="button"><i class="fas fa-user-circle"></i>Profile</a>
+            <a class="p-2" type="button"><i class="fas fa-sign-out-alt"></i>Logout</a>
+        </div>
+
+        <!--Nav bar-->
+        <div class="row bg-blue fixed-top" id="navBar" style="top:29px">
+            <div class="col-sm-9">
+                <div class="row">
+                    <h2 class="navbar-brand mx-4 txt-white">Share Your Travels</h2>
+                    <div class="btn-group mx-4">
+                        <button type="button" class="btn txt-white">Home</button>
+                        <button type="button" class="btn txt-white">About</button>
+                        <button type="button" class="btn txt-white">Contact</button>
+                        <button type="button" class="btn dropdown-toggle txt-white" data-toggle="dropdown">
+                           Browse
+                        </button>
+                        <div class="dropdown-menu bg-blue">
+                            <a class="dropdown-item" href="#">#1</a>
+                            <a class="dropdown-item" href="#">#2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-3" style="margin:auto">
+                <div style="float:right">
+                    <div class="input-group p-2">
+                        <input type="text" class="form-control" placeholder="Search" name="search">
+                        <div class="input-group-btn btn-pink">
+                          <button class="btn btn-pink" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div class="row" id="main" style="margin-top:100px">
+            <!--Left nav bar-->
+            <div class="col-sm-2">
+                <div class="btn-group-vertical" style="margin-bottom: 5px;">
+                    <button type="button" class="btn" data-toggle="collapse" data-target="#vertical-btn-group-1" style="background-color: #1A237E;color:white;">Continents</button>
+                    <div id="vertical-btn-group-1" class="collapse" style="width: 100%;">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn">Africa</button>
+                            <button type="button" class="btn">Asia</button>
+                            <button type="button" class="btn">Europe</button>
+                            <button type="button" class="btn">North America</button>
+                            <button type="button" class="btn">South America</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-group-vertical" style="margin-bottom: 5px;">
+                    <button type="button" class="btn" data-toggle="collapse" data-target="#vertical-btn-group-2" style="background-color: #1A237E;color:white;">Popular</button>
+                    <div id="vertical-btn-group-2" class="collapse" style="width: 100%;">
+                        <div class="btn-group-vertical">
+                            <button type="button" class="btn">Canada</button>
+                            <button type="button" class="btn">France</button>
+                            <button type="button" class="btn">Italy</button>
+                            <button type="button" class="btn">Germany</button>
+                            <button type="button" class="btn">Ghana</button>
+                            <button type="button" class="btn">Greece</button>
+                            <button type="button" class="btn">Hungary</button>
+                            <button type="button" class="btn">Spain</button>
+                            <button type="button" class="btn">United States</button>
+                            <button type="button" class="btn">United Kingdom</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Main-->
+            <div class="col-sm-10">
+                <div class="row">
+                    <!--Large image-->
+                    <div class="col-sm-8">
+                        <figure>
+                            <img src="images/8711645510.jpg" style="width:100%"/>
+                            <figcaption class="description">Located on the western perimeter of Agora in Athens. Build in 460-415 BCE, it is the best preserved temple of antiquity.</figcaption>
+                        </figure>
+                    </div>
+                    <!--Panel-->
+                    <div class="col-sm-4">
+                        <h1 style="font-size: 2.2vw;">Temple of Hephaistos</h1>
+
+                        <ol class="panel bg-white details-list">
+                            <li>By: <a href="#">Ellie Sullivan</a></li>
+                            <li>Country: <a href="#">Greece</a></li>
+                            <li>City: <a href="#">Athens</a></li>
+                            <li>Taken on: <time>August 8, 2017</time></li>
+                        </ol>
+
+                        <div class="btn-group buttonGroup" style="width:100%">
+                            <button type="button" class="btn"><i class="fas fa-heart"></i></button>
+                            <button type="button" class="btn"><i class="fas fa-download"></i></button>
+                            <button type="button" class="btn"><i class="fas fa-print"></i></button>
+                            <button type="button" class="btn"><i class="fas fa-comment-alt"></i></button>
+                        </div>
+
+                        <br><br>
+
+                        <h3>Tags</h3>
+
+                        <div class="panel bg-white txt-white"id="tags">
+                            <span class="label bg-blue" role="button">ancient</span>
+                            <span class="label bg-blue" role="button">garden</span>
+                            <span class="label bg-blue" role="button">hill</span>
+                            <span class="label bg-blue" role="button">ruins</span>
+                            <span class="label bg-blue" role="button">sunshine</span>
+                            <span class="label bg-blue" role="button">temple</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Related photos-->
+                <h2>Related Photos</h2>
+                <div class="row" id="relatedPhotos">
+                    <div class="col">
+                        <div class="caption">
+                            <figure>
+                                <img class="thumbnail" src="images/related/8710320515.jpg"/>
+                                <figcaption>Ekklisia Agii Isidori</figcaption>
+                            </figure>
+                            <div class="btn-group">
+                                <div type="button" class="btn btn-sm btn-blue"><i class="fas fa-eye"></i>View</div>
+                                <div type="button" class="btn btn-sm btn-pink"><i class="fas fa-heart"></i>Favorite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caption">
+                            <figure>
+                                <img class="thumbnail" src="images/related/8710513053.jpg"/>
+                                <figcaption>Theatre of Dionysos</figcaption>
+                            </figure>
+                            <div class="btn-group">
+                                <div type="button" class="btn btn-sm btn-blue"><i class="fas fa-eye"></i>View</div>
+                                <div type="button" class="btn btn-sm btn-pink"><i class="fas fa-heart"></i>Favorite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caption">
+                            <figure>
+                                <img class="thumbnail" src="images/related/8711623884.jpg"/>
+                                <figcaption>Roman Agora</figcaption>
+                            </figure>
+                            <div class="btn-group">
+                                <div type="button" class="btn btn-sm btn-blue"><i class="fas fa-eye"></i>View</div>
+                                <div type="button" class="btn btn-sm btn-pink"><i class="fas fa-heart"></i>Favorite</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="caption">
+                            <figure>
+                                <img class="thumbnail" src="images/related/9498388516.jpg"/>
+                                <figcaption>Temple of Asclepius</figcaption>
+                            </figure>
+                            <div class="btn-group">
+                                <div type="button" class="btn btn-sm btn-blue"><i class="fas fa-eye"></i>View</div>
+                                <div type="button" class="btn btn-sm btn-pink"><i class="fas fa-heart"></i>Favorite</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <!--Footer-->
+        <div class="row bg-blue txt-white" id="footer" style="padding-top: 10px;">
+            <!--Website description-->
+            <div class="col-sm-6">
+                <h2>Share Your Travels</h2>
+                <p style="font-size: 15px;">This is a case study from the textbook <i>Fundamentals of Web Development</i>. 
+                This book is published by Pearson Ed, and it the only textbook that covers the essentials of the entire field of contemporary web development.</p>
+
+                <div class="row">
+                    <!--Headquarters-->
+                    <div class="col-sm-6">
+                        <h4>Headquarters</h4>
+                        <p style="font-size: 15px;">Mount Royal University 4825 Mount Royal Gate SW Calgary, Canada, T3E 6K6</p>
+                    </div>
+
+                    <!--Follow us-->
+                    <div class="col-sm-6">
+                        <h4>Follow us</h4>
+                        <div class="btn-group">
+                            <a type="button" class="btn btn-pink"><i class="fas fa-camera"></i></a>
+                            <a type="button" class="btn btn-dpblue"><i class="fas fa-user-alt"></i></a>
+                            <a type="button" class="btn btn-blue"><i class="fas fa-tags"></i></a>
+                            <a type="button" class="btn btn-dpred"><i class="fas fa-bookmark"></i></a>
+                            <a type="button" class="btn btn-red"><i class="fab fa-facebook-square" style="color:white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Recent posts-->
+            <div class="col-sm-3">
+                <h4><i class="fas fa-pen"></i>Recent Posts</h4>
+                <div class="media">
+                    <img src="images/footer/6592294487.jpg" class="mr-3 rounded-circle">
+                    <div class="media-body">
+                        <h5 style="color:#329fd1">Calgary in the Snow</h5>
+                        <i style="font-size: 15px;">5 minutes ago</i>
+                        <hr class="mt-4" style="border-color:white">
+                    </div>
+                </div>
+                
+                <div class="media">
+                    <img src="images/footer/6114904363.jpg" class="mr-3 rounded-circle">
+                    <div class="media-body">
+                        <h5 style="color:#329fd1">Mountain Climbing</h5>
+                        <i style="font-size: 15px;">11 minutes ago</i>  
+                        <hr class="mt-4" style="border-color:white">    
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="images/footer/5856697109.jpg" class="mr-3 rounded-circle">
+                    <div class="media-body">
+                        <h5 style="color:#329fd1">Nova Scotia</h5>
+                        <i style="font-size: 15px;">23 minutes ago</i>   
+                        <hr class="mt-4" style="border-color:white">   
+                    </div>
+                </div>
+            </div>
+                
+                
+            <!--Contact us-->
+            <div class="col-sm-3 p-2">
+                <h4><i class="fas fa-envelope"></i>Contact Us</h4>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter name..." id="name" name="name">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter email..." id="mail" name="email">
+                </div>
+
+                <div class="input-group mb-3">
+                    <textarea type="text" class="form-control" placeholder="Enter message..." rows="4" id="comment" name="comment"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-pink" style="width:100%;margin:0;">Submit</button>
+            </div>
+
+            
+        </div>
+        
+        <!--Copyright-->
+        <div class="row justify-content-center bg-dpblue txt-white" style="padding-top: 10px;">
+            <p>Copyright &copy; 2017 Creative Commons ShareAlike</p>
+        </div>
+        <div class="row justify-content-center bg-dpblue txt-white" style="padding-bottom: 10px;">
+            <div class="row">
+                <a type="button" class="mx-2" style="color:#329fd1"></i>Home</a>/
+                <a type="button" class="mx-2" style="color:#329fd1"></i>About</a>/
+                <a type="button" class="mx-2" style="color:#329fd1"></i>Contact</a>/
+                <a type="button" class="mx-2" style="color:#329fd1"></i>Browse</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
